@@ -10,9 +10,10 @@ import WelcomeName from "./components/WelcomeName";
 import ConditionalText from "./components/ConditionalText";
 import HiddenName from "./components/HiddenName";
 import Calculator from "./components/Calculator";
+import { Container, Grid } from '@mui/material';
 
 const Test = () => {
-    const preventKeyDown = (event: KeyboardEvent<HTMLInputElement>) => {
+    /*const preventKeyDown = (event: KeyboardEvent<HTMLInputElement>) => {
         console.log(event.key);
         if (event.key === 'h') {
             event.preventDefault();
@@ -46,6 +47,33 @@ const Test = () => {
             <article>{latestName} is clicked!</article>
             <Calculator />
         </>
+    );*/
+
+    return (
+        <Container style={{ backgroundColor: "#022fff" }}>
+            <Grid container style={{ backgroundColor: "#ff2fff" }}>
+                <Grid item xs={12} md={6}>
+                    xs-12
+                </Grid>
+                <Grid item xs={12} md={6}>
+                    xs-12
+                </Grid>
+            </Grid>
+            <Grid container style={{ backgroundColor: "#ff9fff" }}>
+                <Grid item xs={6} md={3} style={{ backgroundColor: "#ffff2f" }}>
+                    xs-6
+                </Grid>
+                <Grid item xs={6} md={3} style={{ backgroundColor: "#ffff2f" }}>
+                    xs-6
+                </Grid>
+                <Grid item xs={6} md={3} style={{ backgroundColor: "#ffff2f" }}>
+                    xs-6
+                </Grid>
+                <Grid item xs={6} md={3} style={{ backgroundColor: "#ffff2f" }}>
+                    xs-6
+                </Grid>
+            </Grid>
+        </Container>
     );
 };
 
