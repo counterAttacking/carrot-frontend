@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { AppBar, Toolbar } from '@mui/material';
 import BottomAppBar from './components/BottomAppBar';
+import Home from './pages/Home';
 
 const App = (): JSX.Element => {
   return (
@@ -9,9 +10,9 @@ const App = (): JSX.Element => {
       <AppBar position="fixed">
         <Toolbar></Toolbar>
       </AppBar>
-
       <Toolbar />
-      내용
+      <Home />
+      <Toolbar />
       <BottomAppBar />
     </main>
   );
